@@ -45,7 +45,7 @@ body {
     gap: 30px;
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 30px 0 30px;
     box-sizing: border-box;
 }
 
@@ -387,6 +387,17 @@ header #links-menu a:hover {
     margin-bottom: 5px;
 }
 /* ACTIVITIES */
+.activities {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+    gap: 30px;
+}
+.activities h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+}
 .card-content-activities {
     display: flex;
     flex-direction: row;
@@ -395,28 +406,25 @@ header #links-menu a:hover {
     gap: 30px;
 }
 .card-activities {
+    display: flex;
+    flex-direction: column;
     width: 297.5px;
     height: 439px;
     border-radius: 20px;
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
 }
 .card-activities img {
+    object-fit: cover;
     width: 297.5px;
     height: 380px;
-    border-radius: 20px 20px 0 0;  
+    border-radius: 20px 20px 0 0;
 }
-.card-txt-activities {
-    width: 297.5px;
-    height: 59px;
+.card-title {
     padding: 20px 19px 20px 19px;
     border-radius: 0 0 20px 20px;
-    background-color: (255, 255, 255, 1);
-}
-.card-txt-activities .card-title {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
-    text-align: left;
     color: rgba(0, 0, 0, 1);
     margin: 0;
 }
