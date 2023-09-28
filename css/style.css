@@ -107,7 +107,7 @@ header img {
 header #links-menu {
     width: 328.6px;
     height: 35px;
-    padding: 0px, 25px, 0px, 25px;
+    padding: 0 25px 0 25px;
     gap: 68px;
 }
 header #links-menu menu {
