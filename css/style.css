@@ -45,7 +45,7 @@ body {
     gap: 30px;
     width: 100%;
     max-width: 1440px;
-    padding: 0 30px 0 30px;
+    padding: 0 30px 0 27px;
     box-sizing: border-box;
 }
 
@@ -270,6 +270,12 @@ header #links-menu a:hover {
     padding: 30px;
     border-radius: 15px;
 }
+.hebergements h2 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+}
 .card-content-hebergements {
     display: flex;
     flex-direction: row;
@@ -282,43 +288,40 @@ header #links-menu a:hover {
     flex-direction: column;
     gap: 4px;
     width: 250.33px;
-    height: 207.25px;
     padding: 0 0 15px 0;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .card-hebergements img {
-    width: 250.33px;
-    height: 124px;
+    height: 114px;
     border-radius: 20px 20px 0 0;
     border: 5px solid #FFFFFF;
+    object-fit: cover;
 }
 .card-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 250.33px;
     height: 64.25px;
     padding: 0 15px 0 15px;
 }
-.card-title {
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card-txt h3 {
     width: 220.33px;
-    height: 19px;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 700;
+    padding: 0;
     line-height: 19px;
-    text-align: left;
     color: rgba(0, 0, 0, 1);
 }
-.card-subtitle {
+.card-txt .card-subtitle {
     width: 220.33px;
     height: 16px;
-    font-family: Raleway;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    text-align: left;
 }
 .card-rating {
     display: flex;
@@ -328,19 +331,13 @@ header #links-menu a:hover {
     padding: 0;
 }
 .card-rating i {
-    width: 14.29px;
-    height: 13.25px;
-    /*top: 51px;
-    left: 81.71px;*/
+        transform: translateY(6px);
 }
 .hebergements p {
-    width: 67%;
     height: 21px;
-    font-family: Raleway;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
-    text-align: left;
 }
 /****** Populaires ***********/
 #populaires {
