@@ -102,7 +102,6 @@ header p {
 header img {
     width: 61.09px;
     height: 19px;
-
 }
 header #links-menu {
     position: absolute;
@@ -143,10 +142,13 @@ header #links-menu a:hover {
     height: 26px;
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 #headline p {
     height: 19px;
     margin: 0;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 #research-bar form {
@@ -307,7 +309,7 @@ header #links-menu a:hover {
     flex-direction: column;
     gap: 8px;
 }
-.card-txt h3 {
+.card-title-hebergements {
     width: 220.33px;
     padding: 0;
     line-height: 19px;
@@ -345,6 +347,7 @@ header #links-menu a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 700;
 }
 
 .populaires-cards .card {
@@ -369,7 +372,7 @@ header #links-menu a:hover {
     height: 135px;
 }
 
-.populaires-cards .card-title {
+.populaires-cards .card-title-hebergements {
     margin-top: 10px;
     margin-bottom: 4px;
 }
@@ -477,11 +480,25 @@ footer {
         flex-direction: column;
         gap: 50px;
         height: 913.5px;
-
+    }
     .hebergements {
         width: 100%;
     }
-
+    .card-hebergements {
+        width: 268px;
+        height: 207.25px;
+    }
+    .card-hebergements img {
+        height: 124px;
+    }
+    .card-content {
+        height: 64.25px;
+    }
+    .card-title-hebergements {
+        font-weight: 700;
+        font-size: 16px;
+        height: 19px;
+    }
     #populaires {
         width: 100%;
     }
@@ -495,13 +512,14 @@ footer {
     .populaires-cards a {
         width: 30%;
     }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
+    .populaires-cards .card-title-hebergements {
+        width: 163.33px;
+        font-size: 16px;
+        height: 25px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
     }
     .card-content-activities {
@@ -524,9 +542,62 @@ footer {
     .footer-element {
         padding-right: 0;
     }
-}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0;
+    }
+    header {
+        display: block;
+        height: 115px;
+        text-align: center;
+    }
+    header p {
+        width: 100%;
+        padding-right: 0;
+    }
+    header #links-menu {
+        width: 100%;
+    }
+    header #links-menu menu {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+    }
+    header #links-menu li {
+        width: 100%;
+    }
+    header #links-menu a {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 15px;
+        border-bottom: 2px solid transparent;
+    }
+    header #links-menu a:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+        color: var(--main-color);
+    }
+    .infos {
+        height: 432px;
+        padding: 0 20px 0 20px;
+    }
+    #headline {
+        height: 79px;
+    }
+    #headline h1 {
+        height: 52px;
+        line-height: 25.83px;
+    }
+    #research-bar {
+        width: 335px;
+        height: 49px;
+    }
+    #filters-bar {
+        display: flex;
+        flex-wrap: wrap;
+        height: 161px;
+    }
 }
