@@ -13,6 +13,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/f88e644456.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -34,22 +35,23 @@
                 </div>
                 <div id="research-bar">
                     <form>
-                        <img alt="vecteur emplacement/lieu" src="./images/Vectors/Vector-place.svg">
+                        <i class="fa-solid fa-location-dot location"></i>
                         <label><input type="text" name="research" placeholder="Marseille, France" id="research"></label>
-                        <button>Rechercher</button>
+                        <button class="desktop-btn">Rechercher</button>
+                        <button class="mobile-btn"><i class="fa-solid fa-magnifying-glass magnifying-glass"></i></button>
                     </form>
                 </div>
                 <div id="filters-bar">
                     <p>Filtres</p>
                     <ul id="filters-list">
-                        <li><img alt="vecteur" src="images/Vectors/Vector-price.svg" class="vector-filters">Économique</li>
-                        <li><img alt="vecteur" src="images/Vectors/Vector-family.svg" class="vector-filters">Familial</li>
-                        <li><img alt="vecteur" src="images/Vectors/Vector-romantic.svg" class="vector-filters">Romantique</li>
-                        <li><img alt="vecteur" src="images/Vectors/Vector-fire.svg" class="vector-filters">Nos pépites</li>
+                        <li><i class="fa-solid fa-money-bill-wave vector-filters"></i>Économique</li>
+                        <li><i class="fa-solid fa-person vector-filters"></i>Familial</li>
+                        <li><i class="fa-solid fa-heart vector-filter"></i>Romantique</li>
+                        <li><i class="fa-solid fa-fire vector-filter"></i> pépites</li>
                     </ul>
                 </div>
                 <div id="info-bar">
-                    <img alt="image vectorielle représentant la lettre i dans un cercle" src="images/Vectors/Vector-info.svg">
+                    <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>

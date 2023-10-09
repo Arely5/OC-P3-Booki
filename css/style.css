@@ -155,9 +155,10 @@ header #links-menu a:hover {
     display: flex;
     flex-direction: row;
 }
-#research-bar img {
+#research-bar .location {
     background-color: var(--main-bg-color);
     border: 1px solid var(--main-bg-color);
+    color: black;
     border-radius: 15px 0 0 15px;
     padding: 14.5px 17px 14.5px 17px;
 }
@@ -172,7 +173,7 @@ header #links-menu a:hover {
     font-weight: 700;
     font-size: 18px;
 }
-#research-bar button {
+#research-bar .desktop-btn {
     background-color: var(--main-color);
     color: white;
     font-size: 18px;
@@ -182,6 +183,12 @@ header #links-menu a:hover {
     width: 132px;
     padding-top: 13px;
     padding-bottom: 13px;
+}
+#research-bar .mobile-btn {
+    display: none;
+}
+.mobile-btn .magnifying-glass {
+    color: #ffffff;
 }
 #filters-bar {
     display: flex;
@@ -230,12 +237,10 @@ header #links-menu a:hover {
     flex-direction: row;
     gap: 10px;
 }
-#info-bar img {
+#info-bar i {
     border: 1px solid var(--info-border-color);
     border-radius: 50%;
-    height: 10px;
-    width: 4px;
-    padding: 6px 9px 6px 9px;
+    padding: 5px 8px 5px 8px;
 }
 #info-bar p {
     font-family: "Raleway";
@@ -487,12 +492,16 @@ footer {
     .hebergements {
         width: 100%;
     }
+    .card-content-hebergements {
+        width: 100%;
+    }
     .card-hebergements {
         width: 268px;
         height: 207.25px;
+        padding-bottom: 0;
     }
     .card-hebergements img {
-        height: 124px;
+        height: 114px;
     }
     .card-content {
         height: 64.25px;
@@ -598,6 +607,19 @@ footer {
     #research-bar {
         width: 335px;
         height: 49px;
+    }
+    #research-bar .desktop-btn {
+        display: none;
+    }
+    #research-bar .mobile-btn {
+        display: block;
+        background-color: var(--main-color);
+        border: 1px solid var(--main-color);
+        border-radius: 15px;
+        width: 49px;
+        height: 49px;
+        padding: 15px 16px 15px 16px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
     #filters-bar {
         height: 161px;
@@ -725,9 +747,8 @@ footer {
         padding: 30px 0 0 30px;
         gap: 50px;
     }
-
-.footer-element {
-    width: 100%;
-    padding: 0;
-}
+    .footer-element {
+        width: 100%;
+        padding: 0;
+    }
 }
