@@ -384,6 +384,7 @@ header #links-menu a:hover {
 .populaires-cards .card-title-hebergements {
     margin-top: 10px;
     margin-bottom: 4px;
+    width: 100%;
 }
 
 .populaires-cards .card-subtitle {
@@ -611,7 +612,7 @@ footer {
         display: block;
         padding-top: 0;
         padding-bottom: 15px;
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid rgba(242, 242, 242, 1);
     }
     header #links-menu a:hover {
         border-top: none;
@@ -635,8 +636,11 @@ footer {
         height: 24%;
     }
     #research-bar {
-        width: 335px;
+        width: 100%;
         height: 49px;
+    }
+    #research-bar input {
+        margin-right: -30px;
     }
     #research-bar .desktop-btn {
         display: none;
@@ -732,6 +736,7 @@ footer {
         gap: 15px;
         width: 100%;
     }
+    /*CARDS ORDER*/
     .card-content-hebergements :nth-child(1) {
         order: 0;
     }
@@ -748,6 +753,30 @@ footer {
         order: 1;
     }
     .card-content-hebergements :nth-child(6) {
+        order: 4;
+    }
+
+    .card-content-hebergements .card-rating {
+        display: flex;
+        flex-direction: row;
+    }
+    /*CARD RATING*/
+    .card-content-hebergements .card-rating .fa-solid {
+        order: 0;
+    }
+    .card-content-hebergements .card-rating .fa-solid {
+        order: 5;
+    }
+    .card-content-hebergements .card-rating .fa-solid {
+        order: 2;
+    }
+    .card-content-hebergements .card-rating .fa-solid {
+        order: 3;
+    }
+    .card-content-hebergements .card-rating .fa-solid {
+        order: 1;
+    }
+    .card-content-hebergements .card-rating .fa-solid {
         order: 4;
     }
     .card-hebergements {
